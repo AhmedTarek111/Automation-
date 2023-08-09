@@ -1,7 +1,7 @@
 from datetime import date
 def  birthday_Calculator():
     
-    user_birthdate=date.fromisoformat(input("your birthday date  : "))
+    user_birthdate=date.fromisoformat(input("your birthday date ( YYYY-MM-DD) : "))
     now=date.today()
     if (user_birthdate.month, user_birthdate.day) < (now.month, now.day):
         next_birthday = date(now.year + 1, user_birthdate.month, user_birthdate.day)
