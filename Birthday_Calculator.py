@@ -1,5 +1,5 @@
 from datetime import date
-def  Birthday_Calculator():
+def  birthday_Calculator():
     
     user_birthdate=date.fromisoformat(input("your birthday date  : "))
     now=date.today()
@@ -11,4 +11,4 @@ def  Birthday_Calculator():
     remaining_days = remaining.days
 
     return f"{remaining_days} days Left for your birthdate"
-print(Birthday_Calculator())
+print(birthday_Calculator())

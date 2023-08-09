@@ -1,11 +1,10 @@
 from PIL import Image
 import os
-new_highet=600
-new_width=600
-# new_highet=int(input("please enter the highet : "))
-# new_width=int(input("please enter the width  : "))
-os.chdir(r"C:\Users\Ahmed tareq's pc\OneDrive\Desktop\stock")
-open_file=os.listdir(r"C:\Users\Ahmed tareq's pc\OneDrive\Desktop\stock")
+new_highet=int(input("please enter the highet : "))
+new_width=int(input("please enter the width  : "))
+filelocation=input("enter the path of the file ")
+os.chdir(rf"{filelocation}")
+open_file=os.listdir(rf"{filelocation}")
 for image_name in open_file:
         if not image_name.endswith((".jpg",".png","jpeg")):
                 continue
